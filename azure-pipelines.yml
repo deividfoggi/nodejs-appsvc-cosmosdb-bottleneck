@@ -10,7 +10,7 @@ pool:
   vmImage: ubuntu-latest
 
 variables:
-  webAppName: 'sample-app-1'
+  webAppName: 'dfoggi-sample-app-1'
   serviceConnection: 'sample-app-1-arm-sc'
   azureSubscriptionId: '66dbee39-6412-426f-b432-f8ddd74175a3'
   loadTestResource: 'sample-app-1-load-test-rc'
