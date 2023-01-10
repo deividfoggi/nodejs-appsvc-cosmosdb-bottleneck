@@ -15,8 +15,7 @@ variables:
   azureSubscriptionId: '66dbee39-6412-426f-b432-f8ddd74175a3'
   loadTestResource: 'sample-app-1-load-test-rc'
   loadTestResourceGroup: 'dfoggi-sample-app-1'
-  location: 'brazilsouth'
-  loadTestLocation: 'eastus'
+  location: 'eastus'
 
 
 stages:
