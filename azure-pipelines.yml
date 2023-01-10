@@ -14,8 +14,9 @@ variables:
   serviceConnection: 'sample-app-1-arm-sc'
   azureSubscriptionId: '66dbee39-6412-426f-b432-f8ddd74175a3'
   loadTestResource: 'sample-app-1-load-test-rc'
-  loadTestResourceGroup: 'sample-app-1'
+  loadTestResourceGroup: 'sample-app-1-load-test-rc'
   location: 'brazilsouth'
+  loadTestLocation: 'eastus'
 
 
 stages:
@@ -135,7 +136,7 @@ stages:
         subscriptionId: $(azureSubscriptionId)
         action: 'Create Or Update Resource Group'
         resourceGroupName: $(loadTestResourceGroup)
-        location: '$(location)'
+        location: '$(loadTestLocation)'
         templateLocation: 'Linked artifact'
         csmFile: '$(System.DefaultWorkingDirectory)/ARMTemplate/template.json'
         csmParametersFile: '$(System.DefaultWorkingDirectory)/ARMTemplate/parameters.json'
